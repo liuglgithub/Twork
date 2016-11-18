@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.liugl.alltest.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/fragment_bug"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="fragment——bug" />
+
+            <Button
+                android:id="@+id/fragment_qiantao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="fragment——嵌套" />
+
+            <Button
+                android:id="@+id/suolue_pic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="从一个缩略图启动activity" />
+
+            <Button
+                android:id="@+id/notification_test"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="自定义通知栏" />
+
+
+            <Button
+                android:id="@+id/permission"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="6.0权限" />
+
+            <Button
+                android:id="@+id/chenjinshi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="沉浸式状态栏" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

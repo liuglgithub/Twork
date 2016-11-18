@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.liugl.alltest">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".fragment.FragmentMain2Activity" />
+        <activity android:name=".fragment.FragmetnNestTestMainActivity" />
+        <activity android:name=".suoluetu.SuolueActivity" />
+        <activity android:name=".suoluetu.DetailActivity" />
+        <activity android:name=".notification.NotificationCustomActivity" />
+        <activity android:name=".notification.CustomNotifiCationDetailActivity" />
+        <activity android:name=".permission.PermissionMain2Activity" />
+        <activity android:name=".handlethreadloopall.RunOnUIThread_HandlerPostActivity" />
+        <activity android:name=".chenjinshi.ChenJinShiStatusBarMain2Activity" />
+        <activity android:name=".chenjinshi.FirstStyleActivity" />
+        <activity android:name=".chenjinshi.SecondeStyleActivity" />
+        <activity android:name=".chenjinshi.ThridStyleActivity" />
+        <activity android:name=".chenjinshi.CelueMain2Activity" />
+        <activity
+            android:name=".chenjinshi.Celue1Activity"
+            android:theme="@style/chenjinshiAppTheme" />
+        <activity android:name=".notification.CompatCustomNotifiCationActivity" />
+        <activity android:name=".notification.BigRemoteView_Activity"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:background="@android:color/black"
+    >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="8"
+        android:orientation="vertical"
+        android:background="@android:color/black"
+        >
+
+        <TextView
+            android:id="@+id/custom_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="妹子给你发来了一条信息"
+            android:textColor="@color/colorAccent"
+            />
+
+        <TextView
+            android:id="@+id/custom_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="消息详细内容"
+            android:textColor="@color/bottomtab_normal"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/huifu"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:text="回复"
+        />
+
+</LinearLayout>
