@@ -34,7 +34,10 @@
             android:name=".chenjinshi.Celue1Activity"
             android:theme="@style/chenjinshiAppTheme" />
         <activity android:name=".notification.CompatCustomNotifiCationActivity" />
-        <activity android:name=".notification.BigRemoteView_Activity"></activity>
+        <activity android:name=".notification.BigRemoteView_Activity" />
+        <activity android:name=".nestedscrolling.NestedScrollingMain2Activity" />
+        <activity android:name=".permission.PermissionRequestHomeActivity" />
+        <activity android:name=".permission.SystemDefaultAPIPerssionActivity"></activity>
     </application>
 
 </manifest>

@@ -13,6 +13,7 @@ import com.liugl.alltest.fragment.FragmentMain2Activity;
 import com.liugl.alltest.fragment.FragmetnNestTestMainActivity;
 import com.liugl.alltest.notification.NotificationCustomActivity;
 import com.liugl.alltest.permission.PermissionMain2Activity;
+import com.liugl.alltest.permission.PermissionRequestHomeActivity;
 import com.liugl.alltest.suoluetu.SuolueActivity;
 
 import butterknife.BindView;
@@ -72,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(notification_test_picIntent);
                 break;
             case R.id.permission:
-                Intent  permissionIntent = new Intent(this, PermissionMain2Activity.class);
+                Intent  permissionIntent = new Intent(this, PermissionRequestHomeActivity.class);
                 startActivity(permissionIntent);
                 break;
             case  R.id.chenjinshi:
