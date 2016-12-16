@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.liugl.alltest.nestedscroll.coordinatorlayout.demo01.MyBehaviroTowTextviewActivity"
+    >
+
+    <View
+        android:id="@+id/first"
+        android:layout_width="match_parent"
+        android:layout_height="128dp"
+        android:background="@android:color/holo_blue_light"/>
+
+    <View
+        android:id="@+id/second"
+        android:layout_width="match_parent"
+        android:layout_height="128dp"
+        app:layout_behavior="com.liugl.alltest.nestedscroll.coordinatorlayout.demo01.FollowBehavior"
+        app:target="@id/first"
+        android:background="@android:color/holo_green_light"/>
+
+</android.support.design.widget.CoordinatorLayout>

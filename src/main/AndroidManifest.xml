@@ -3,13 +3,15 @@
     package="com.liugl.alltest">
 
     <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -35,9 +37,25 @@
             android:theme="@style/chenjinshiAppTheme" />
         <activity android:name=".notification.CompatCustomNotifiCationActivity" />
         <activity android:name=".notification.BigRemoteView_Activity" />
-        <activity android:name=".nestedscrolling.NestedScrollingMain2Activity" />
         <activity android:name=".permission.PermissionRequestHomeActivity" />
-        <activity android:name=".permission.SystemDefaultAPIPerssionActivity"></activity>
+        <activity android:name=".permission.SystemDefaultAPIPerssionActivity" />
+        <activity android:name=".nestedscroll.NestedScrollHomeActivity" />
+        <activity android:name=".nestedscroll.defapi.DefApiActivity" />
+        <activity android:name=".nestedscroll.nestedapi.NestedApiActivity" />
+        <activity android:name=".nestedscroll.coordinatorlayout.demo01.MyBehaviroTowTextviewActivity" />
+        <activity android:name=".materialdesign.toolbar.ToolBarMDActivity" />
+        <activity android:name=".materialdesign.MDHOmeActivity" />
+        <activity
+            android:name=".materialdesign.toolbar.MyChildActivity"
+            android:parentActivityName=".materialdesign.toolbar.ToolBarMDActivity">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.liugl.alltest.materialdesign.toolbar.ToolBarMDActivity" />
+        </activity>
+        <activity android:name=".nestedscroll.md.MDHomeActivity" />
+        <activity android:name=".cach.CachMain2Activity"></activity>
     </application>
 
 </manifest>

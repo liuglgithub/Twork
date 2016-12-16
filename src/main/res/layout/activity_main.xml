@@ -55,7 +55,36 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="沉浸式状态栏" />
-     
+
+            <Button
+                android:id="@+id/qiantaohuadong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="嵌套滑动" />
+
+            <Button
+                android:id="@+id/md"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" 安卓MaterialDesign " />
+
+            <Button
+                android:id="@+id/image_jiazai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="facebook的banner广告" />
+
+            <Button
+                android:id="@+id/rececyview_jiazai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RecyclerView 多布局" />
+
+            <Button
+                android:id="@+id/baocunweizhi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RecyclerView 多布局" />
 
         </LinearLayout>
     </ScrollView>

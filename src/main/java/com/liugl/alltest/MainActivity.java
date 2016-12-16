@@ -11,6 +11,8 @@ import android.widget.Button;
 import com.liugl.alltest.chenjinshi.ChenJinShiStatusBarMain2Activity;
 import com.liugl.alltest.fragment.FragmentMain2Activity;
 import com.liugl.alltest.fragment.FragmetnNestTestMainActivity;
+import com.liugl.alltest.materialdesign.MDHOmeActivity;
+import com.liugl.alltest.nestedscroll.NestedScrollHomeActivity;
 import com.liugl.alltest.notification.NotificationCustomActivity;
 import com.liugl.alltest.permission.PermissionMain2Activity;
 import com.liugl.alltest.permission.PermissionRequestHomeActivity;
@@ -43,17 +45,25 @@ public class MainActivity extends AppCompatActivity {
     @BindView(R.id.chenjinshi)
     Button chenjinshi;
 
+    @BindView(R.id.qiantaohuadong)
+    Button qiantaohuadong;
+
+    @BindView(R.id.md)
+    Button md;
+
+    @BindView(R.id.rececyview_jiazai)
+    Button rececyview_jiazai;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Log.e(TAG,TAG1 + "   onCreate");
         ButterKnife.bind(this);
-
-
     }
 
-    @OnClick({R.id.fragment_bug,R.id.fragment_qiantao,R.id.suolue_pic,R.id.notification_test,R.id.permission,R.id.chenjinshi})
+    @OnClick({R.id.md,R.id.qiantaohuadong,R.id.fragment_bug,R.id.fragment_qiantao,
+            R.id.suolue_pic,R.id.notification_test,R.id.permission,R.id.chenjinshi})
     public void btnClick(View view){
         switch (view.getId()){
             case R.id.fragment_bug:
@@ -79,6 +89,14 @@ public class MainActivity extends AppCompatActivity {
             case  R.id.chenjinshi:
                 Intent  chenjinshi = new Intent(this, ChenJinShiStatusBarMain2Activity.class);
                 startActivity(chenjinshi);
+                break;
+            case R.id.qiantaohuadong:
+                Intent  qiantaohuadong = new Intent(this, NestedScrollHomeActivity.class);
+                startActivity(qiantaohuadong);
+                break;
+            case R.id.md:
+                Intent  md = new Intent(this, MDHOmeActivity.class);
+                startActivity(md);
                 break;
         }
 
