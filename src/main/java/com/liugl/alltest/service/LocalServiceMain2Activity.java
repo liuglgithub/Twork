@@ -38,6 +38,26 @@ public class LocalServiceMain2Activity extends AppCompatActivity {
         setContentView(R.layout.activity_local_service_main2);
         ButterKnife.bind(this);
         serviceConnection = new MyServiceConnection();
+
+//        new Thread(new Runnable() {
+//            @Override
+//            public void run() {
+//                int i=0;
+//                while (true){
+//
+//                    try {
+//                        Thread.sleep(500);
+//                    } catch (InterruptedException e) {
+//                        e.printStackTrace();
+//                    }
+//
+//
+//                Log.e(TAG,"i= " + ++ i);
+//                }
+//            }
+//        }).start();
+
+
     }
 
     @OnClick({  R.id.unbindser, R.id.stopService, R.id.startservicebtn, R.id.bindser})

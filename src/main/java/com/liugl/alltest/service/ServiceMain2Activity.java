@@ -18,6 +18,8 @@ public class ServiceMain2Activity extends AppCompatActivity {
     Button localbutton6;
     @BindView(R.id.remotebutton6)
     Button remotebutton6;
+    @BindView(R.id.itentbutton6)
+    Button itentbutton6;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,16 +28,20 @@ public class ServiceMain2Activity extends AppCompatActivity {
         ButterKnife.bind(this);
     }
 
-    @OnClick({R.id.localbutton6,R.id.remotebutton6})
-    public void onViewOncli(View view){
-        switch (view.getId()){
+    @OnClick({R.id.itentbutton6,R.id.localbutton6, R.id.remotebutton6})
+    public void onViewOncli(View view) {
+        switch (view.getId()) {
             case R.id.localbutton6:
-                Intent localIntent = new Intent(ServiceMain2Activity.this,LocalServiceMain2Activity.class);
+                Intent localIntent = new Intent(ServiceMain2Activity.this, LocalServiceMain2Activity.class);
                 startActivity(localIntent);
                 break;
             case R.id.remotebutton6:
-                Intent remoteIntent = new Intent(ServiceMain2Activity.this,LocalServiceMain2Activity.class);
+                Intent remoteIntent = new Intent(ServiceMain2Activity.this, ServiceComplexMain2Activity.class);
                 startActivity(remoteIntent);
+                break;
+            case R.id.itentbutton6:
+                Intent itentIntent = new Intent(ServiceMain2Activity.this, MyIntentServiceMain2Activity.class);
+                startActivity(itentIntent);
                 break;
         }
     }

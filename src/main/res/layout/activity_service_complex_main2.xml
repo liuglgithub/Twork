@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_service_complex_main2"
     android:layout_width="match_parent"
@@ -8,6 +8,35 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
     tools:context="com.liugl.alltest.service.ServiceComplexMain2Activity">
 
-</RelativeLayout>
+    <Button
+        android:id="@+id/startsv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="启动startService"
+        />
+
+    <Button
+        android:id="@+id/stopsv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="停止startService"
+        />
+
+    <Button
+        android:id="@+id/bindpsv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="绑定Service"
+        />
+
+    <Button
+        android:id="@+id/unbindpsv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="解除绑定Service"
+        />
+    
+</LinearLayout>

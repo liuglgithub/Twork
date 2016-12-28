@@ -71,9 +71,17 @@
         -->
         <service
             android:name=".service.MyService"
-            android:enabled="true"></service>
+            android:enabled="true" />
+        <service
+            android:name=".service.MyComplexService"
+            android:enabled="true" />
+        <service
+            android:name=".service.MyIntentService"
+            android:enabled="true" />
 
-        <activity android:name=".service.ServiceComplexMain2Activity"></activity>
+        <activity android:name=".service.ServiceComplexMain2Activity" />
+        <activity android:name=".service.MyIntentServiceMain2Activity" />
+        <activity android:name=".https.HttpsMain2Activity"></activity>
     </application>
 
 </manifest>
