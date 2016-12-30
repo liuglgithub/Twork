@@ -102,6 +102,13 @@
                 android:layout_height="wrap_content"
                 android:text="RSA加解密使用" />
 
+            <Button
+                android:id="@+id/imgload_test"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="图片加载框架" />
+
+
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>

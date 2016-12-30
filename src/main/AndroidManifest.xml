@@ -82,7 +82,9 @@
         <activity android:name=".service.ServiceComplexMain2Activity" />
         <activity android:name=".service.MyIntentServiceMain2Activity" />
         <activity android:name=".https.HttpsMain2Activity" />
-        <activity android:name=".rsa.RSAMain2Activity"></activity>
+        <activity android:name=".rsa.RSAMain2Activity" />
+        <activity android:name=".imgload.ImageLoaderMain2Activity" />
+        <activity android:name=".imgload.glide.GlideMain2Activity"></activity>
     </application>
 
 </manifest>

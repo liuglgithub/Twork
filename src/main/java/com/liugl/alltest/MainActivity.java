@@ -12,6 +12,7 @@ import com.liugl.alltest.chenjinshi.ChenJinShiStatusBarMain2Activity;
 import com.liugl.alltest.fragment.FragmentMain2Activity;
 import com.liugl.alltest.fragment.FragmetnNestTestMainActivity;
 import com.liugl.alltest.https.HttpsMain2Activity;
+import com.liugl.alltest.imgload.ImageLoaderMain2Activity;
 import com.liugl.alltest.materialdesign.MDHOmeActivity;
 import com.liugl.alltest.nestedscroll.NestedScrollHomeActivity;
 import com.liugl.alltest.notification.NotificationCustomActivity;
@@ -65,6 +66,8 @@ public class MainActivity extends AppCompatActivity {
     Button httpsTest;
     @BindView(R.id.rsa_test)
     Button rsaTest;
+    @BindView(R.id.imgload_test)
+    Button imgloadTest;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -74,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
         ButterKnife.bind(this);
     }
 
-    @OnClick({R.id.rsa_test,R.id.https_test, R.id.servicedetail, R.id.md, R.id.qiantaohuadong, R.id.fragment_bug, R.id.fragment_qiantao,
+    @OnClick({R.id.imgload_test,R.id.rsa_test, R.id.https_test, R.id.servicedetail, R.id.md, R.id.qiantaohuadong, R.id.fragment_bug, R.id.fragment_qiantao,
             R.id.suolue_pic, R.id.notification_test, R.id.permission, R.id.chenjinshi})
     public void btnClick(View view) {
         switch (view.getId()) {
@@ -121,6 +124,10 @@ public class MainActivity extends AppCompatActivity {
             case R.id.rsa_test:
                 Intent rsaItent = new Intent(this, RSAMain2Activity.class);
                 startActivity(rsaItent);
+                break;
+            case R.id.imgload_test:
+                Intent imgItent = new Intent(this, ImageLoaderMain2Activity.class);
+                startActivity(imgItent);
                 break;
         }
 
