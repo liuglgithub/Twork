@@ -16,6 +16,7 @@ import com.liugl.alltest.materialdesign.MDHOmeActivity;
 import com.liugl.alltest.nestedscroll.NestedScrollHomeActivity;
 import com.liugl.alltest.notification.NotificationCustomActivity;
 import com.liugl.alltest.permission.PermissionRequestHomeActivity;
+import com.liugl.alltest.rsa.RSAMain2Activity;
 import com.liugl.alltest.service.ServiceMain2Activity;
 import com.liugl.alltest.suoluetu.SuolueActivity;
 
@@ -62,6 +63,8 @@ public class MainActivity extends AppCompatActivity {
     Button servicedetail;
     @BindView(R.id.https_test)
     Button httpsTest;
+    @BindView(R.id.rsa_test)
+    Button rsaTest;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -71,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
         ButterKnife.bind(this);
     }
 
-    @OnClick({R.id.https_test,R.id.servicedetail, R.id.md, R.id.qiantaohuadong, R.id.fragment_bug, R.id.fragment_qiantao,
+    @OnClick({R.id.rsa_test,R.id.https_test, R.id.servicedetail, R.id.md, R.id.qiantaohuadong, R.id.fragment_bug, R.id.fragment_qiantao,
             R.id.suolue_pic, R.id.notification_test, R.id.permission, R.id.chenjinshi})
     public void btnClick(View view) {
         switch (view.getId()) {
@@ -114,6 +117,10 @@ public class MainActivity extends AppCompatActivity {
             case R.id.https_test:
                 Intent httpsItent = new Intent(this, HttpsMain2Activity.class);
                 startActivity(httpsItent);
+                break;
+            case R.id.rsa_test:
+                Intent rsaItent = new Intent(this, RSAMain2Activity.class);
+                startActivity(rsaItent);
                 break;
         }
 

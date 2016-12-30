@@ -81,7 +81,8 @@
 
         <activity android:name=".service.ServiceComplexMain2Activity" />
         <activity android:name=".service.MyIntentServiceMain2Activity" />
-        <activity android:name=".https.HttpsMain2Activity"></activity>
+        <activity android:name=".https.HttpsMain2Activity" />
+        <activity android:name=".rsa.RSAMain2Activity"></activity>
     </application>
 
 </manifest>
