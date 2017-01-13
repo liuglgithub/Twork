@@ -84,7 +84,24 @@
         <activity android:name=".https.HttpsMain2Activity" />
         <activity android:name=".rsa.RSAMain2Activity" />
         <activity android:name=".imgload.ImageLoaderMain2Activity" />
-        <activity android:name=".imgload.glide.GlideMain2Activity"></activity>
+        <activity android:name=".imgload.glide.GlideMain2Activity" />
+        <activity android:name=".h5app.Main2Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="host"
+                    android:scheme="scheme" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".suoluetu.SuoleuMain3Activity" />
+        <activity android:name=".suoluetu.wandoujia.WandoujiaMain3Activity" />
+        <activity android:name=".suoluetu.wandoujia.DetailWanDouJiaActivity"
+            android:theme="@style/transparent"
+            ></activity>
     </application>
 
 </manifest>

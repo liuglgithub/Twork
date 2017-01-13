@@ -19,6 +19,7 @@ import com.liugl.alltest.notification.NotificationCustomActivity;
 import com.liugl.alltest.permission.PermissionRequestHomeActivity;
 import com.liugl.alltest.rsa.RSAMain2Activity;
 import com.liugl.alltest.service.ServiceMain2Activity;
+import com.liugl.alltest.suoluetu.SuoleuMain3Activity;
 import com.liugl.alltest.suoluetu.SuolueActivity;
 
 import butterknife.BindView;
@@ -68,6 +69,8 @@ public class MainActivity extends AppCompatActivity {
     Button rsaTest;
     @BindView(R.id.imgload_test)
     Button imgloadTest;
+    @BindView(R.id.h5_app)
+    Button h5App;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -77,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
         ButterKnife.bind(this);
     }
 
-    @OnClick({R.id.imgload_test,R.id.rsa_test, R.id.https_test, R.id.servicedetail, R.id.md, R.id.qiantaohuadong, R.id.fragment_bug, R.id.fragment_qiantao,
+    @OnClick({R.id.h5_app,R.id.imgload_test, R.id.rsa_test, R.id.https_test, R.id.servicedetail, R.id.md, R.id.qiantaohuadong, R.id.fragment_bug, R.id.fragment_qiantao,
             R.id.suolue_pic, R.id.notification_test, R.id.permission, R.id.chenjinshi})
     public void btnClick(View view) {
         switch (view.getId()) {
@@ -90,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(mqiantoaIntent);
                 break;
             case R.id.suolue_pic:
-                Intent suolue_picIntent = new Intent(this, SuolueActivity.class);
+                Intent suolue_picIntent = new Intent(this, SuoleuMain3Activity.class);
                 startActivity(suolue_picIntent);
                 break;
             case R.id.notification_test:
@@ -128,6 +131,10 @@ public class MainActivity extends AppCompatActivity {
             case R.id.imgload_test:
                 Intent imgItent = new Intent(this, ImageLoaderMain2Activity.class);
                 startActivity(imgItent);
+                break;
+            case R.id.h5_app:
+                Intent h5_appItent = new Intent(this, com.liugl.alltest.h5app.Main2Activity.class);
+                startActivity(h5_appItent);
                 break;
         }
 

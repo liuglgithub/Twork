@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.bumptech.glide.request.target.BitmapImageViewTarget;
 import com.liugl.alltest.R;
 
@@ -27,6 +28,22 @@ public class GlideMain2Activity extends AppCompatActivity {
     Button roundbutton7;
     @BindView(R.id.roundoneimg)
     ImageView roundoneimg;
+    @BindView(R.id.huancunvarybutton7)
+    Button huancunvarybutton7;
+    @BindView(R.id.huancunvary1)
+    ImageView huancunvary1;
+    @BindView(R.id.huancunvary2)
+    ImageView huancunvary2;
+    @BindView(R.id.allhuancbutton7)
+    Button allhuancbutton7;
+    @BindView(R.id.allhuanc1)
+    ImageView allhuanc1;
+    @BindView(R.id.allhuanc2)
+    ImageView allhuanc2;
+
+    private String urlone = "http://img0.imgtn.bdimg.com/it/u=4029398727,3284915473&fm=23&gp=0.jpg";
+    private String urltwo = "http://img2.imgtn.bdimg.com/it/u=3340669505,3200190439&fm=23&gp=0.jpg";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,7 +52,7 @@ public class GlideMain2Activity extends AppCompatActivity {
         ButterKnife.bind(this);
     }
 
-    @OnClick({R.id.roundbutton7, R.id.button7})
+    @OnClick({  R.id.allhuancbutton7,R.id.huancunvarybutton7,R.id.roundbutton7, R.id.button7})
     public void onViewClick(View view) {
         switch (view.getId()) {
             case R.id.button7:
@@ -60,7 +77,30 @@ public class GlideMain2Activity extends AppCompatActivity {
                             }
                         });
                 break;
-
+            case R.id.huancunvarybutton7:
+                Glide.with(GlideMain2Activity.this)
+                        .load("http://inthecheesefactory.com/uploads/source/glidepicasso/cover.jpg")
+                        .placeholder(R.mipmap.ic_launcher)
+                        .into(huancunvary1);
+                Glide.with(GlideMain2Activity.this)
+                        .load("http://inthecheesefactory.com/uploads/source/glidepicasso/cover.jpg")
+                        .placeholder(R.mipmap.ic_launcher)
+                        .into(huancunvary2);
+                break;
+            case R.id.allhuancbutton7:
+                /**
+                 * Glide既缓存全尺寸又缓存其他尺寸
+                 */
+                Glide.with(GlideMain2Activity.this)
+                        .load("http://inthecheesefactory.com/uploads/source/glidepicasso/cover.jpg")
+                        .placeholder(R.mipmap.ic_launcher)
+                        .diskCacheStrategy(DiskCacheStrategy.ALL)  //Glide既缓存全尺寸又缓存其他尺寸
+                        .into(allhuanc1);
+                Glide.with(GlideMain2Activity.this)
+                        .load("http://inthecheesefactory.com/uploads/source/glidepicasso/cover.jpg")
+                        .placeholder(R.mipmap.ic_launcher)
+                        .into(allhuanc2);
+                break;
         }
     }
 }
