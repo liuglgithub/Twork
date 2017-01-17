@@ -99,9 +99,10 @@
         </activity>
         <activity android:name=".suoluetu.SuoleuMain3Activity" />
         <activity android:name=".suoluetu.wandoujia.WandoujiaMain3Activity" />
-        <activity android:name=".suoluetu.wandoujia.DetailWanDouJiaActivity"
-            android:theme="@style/transparent"
-            ></activity>
+        <activity
+            android:name=".suoluetu.wandoujia.DetailWanDouJiaActivity"
+            android:theme="@style/transparent" />
+        <activity android:name=".guanggao.taobao.TaoBaoADActivity"></activity>
     </application>
 
 </manifest>
