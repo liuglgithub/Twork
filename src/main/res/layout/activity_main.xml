@@ -114,6 +114,12 @@
                 android:layout_height="wrap_content"
                 android:text="使用h5唤起本地app" />
 
+            <Button
+                android:id="@+id/ad_app"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="跑马灯、淘宝广告条" />
+
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>

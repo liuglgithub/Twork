@@ -102,7 +102,9 @@
         <activity
             android:name=".suoluetu.wandoujia.DetailWanDouJiaActivity"
             android:theme="@style/transparent" />
-        <activity android:name=".guanggao.taobao.TaoBaoADActivity"></activity>
+        <activity android:name=".guanggao.taobao.TaoBaoADActivity" />
+        <activity android:name=".guanggao.paomadeng.PaoMaDengActivity" />
+        <activity android:name=".guanggao.ADActivity"></activity>
     </application>
 
 </manifest>
