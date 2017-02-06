@@ -106,7 +106,8 @@
         <activity android:name=".guanggao.paomadeng.PaoMaDengActivity" />
         <activity android:name=".guanggao.ADActivity" />
         <activity android:name=".annotation.AnotationMain3Activity" />
-        <activity android:name=".annotation.OneDefindeActivity"></activity>
+        <activity android:name=".annotation.OneDefindeActivity" />
+        <activity android:name=".annotation.defindbutterknife.DefindButterKinfeActivity"></activity>
     </application>
 
 </manifest>

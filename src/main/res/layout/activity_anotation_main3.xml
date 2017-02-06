@@ -17,4 +17,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/one_btn" />
+
+    <Button
+        android:text="简单的ButterKnife实现"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_btn" />
+
 </LinearLayout>

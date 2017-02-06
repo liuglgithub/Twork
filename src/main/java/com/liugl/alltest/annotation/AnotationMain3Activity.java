@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 
 import com.liugl.alltest.R;
+import com.liugl.alltest.annotation.defindbutterknife.DefindButterKinfeActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -19,6 +20,8 @@ public class AnotationMain3Activity extends AppCompatActivity {
     Button oneBtn;
     @BindView(R.id.activity_anotation_main3)
     LinearLayout activityAnotationMain3;
+    @BindView(R.id.bt_btn)
+    Button btBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,12 +30,16 @@ public class AnotationMain3Activity extends AppCompatActivity {
         ButterKnife.bind(this);
     }
 
-    @OnClick({R.id.one_btn})
-    public void onViewClick(View view){
+    @OnClick({R.id.bt_btn,R.id.one_btn})
+    public void onViewClick(View view) {
         switch (view.getId()) {
             case R.id.one_btn:
                 Intent annotation_appItent = new Intent(AnotationMain3Activity.this, OneDefindeActivity.class);
                 startActivity(annotation_appItent);
+                break;
+            case R.id.bt_btn:
+                Intent bt_Itent = new Intent(AnotationMain3Activity.this, DefindButterKinfeActivity.class);
+                startActivity(bt_Itent);
                 break;
         }
     }
