@@ -54,6 +54,10 @@ dependencies {
     compile 'com.android.support:support-v4:25.0.0'
     compile 'com.squareup.okhttp3:okhttp:3.4.1'
     compile 'com.gongwen:marqueelibrary:1.0.4'
+
+    compile 'org.greenrobot:eventbus:3.0.0'
+
+
 }
 // /**/  Project 的gradle文件内容
 //// Top-level build file where you can add configuration options common to all sub-projects/modules.

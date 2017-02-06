@@ -104,7 +104,9 @@
             android:theme="@style/transparent" />
         <activity android:name=".guanggao.taobao.TaoBaoADActivity" />
         <activity android:name=".guanggao.paomadeng.PaoMaDengActivity" />
-        <activity android:name=".guanggao.ADActivity"></activity>
+        <activity android:name=".guanggao.ADActivity" />
+        <activity android:name=".annotation.AnotationMain3Activity" />
+        <activity android:name=".annotation.OneDefindeActivity"></activity>
     </application>
 
 </manifest>

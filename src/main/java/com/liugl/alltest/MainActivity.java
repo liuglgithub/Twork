@@ -7,12 +7,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.RelativeLayout;
 
+import com.liugl.alltest.annotation.AnotationMain3Activity;
 import com.liugl.alltest.chenjinshi.ChenJinShiStatusBarMain2Activity;
 import com.liugl.alltest.fragment.FragmentMain2Activity;
 import com.liugl.alltest.fragment.FragmetnNestTestMainActivity;
 import com.liugl.alltest.guanggao.ADActivity;
-import com.liugl.alltest.guanggao.taobao.TaoBaoADActivity;
 import com.liugl.alltest.h5app.Main2Activity;
 import com.liugl.alltest.https.HttpsMain2Activity;
 import com.liugl.alltest.imgload.ImageLoaderMain2Activity;
@@ -75,6 +76,10 @@ public class MainActivity extends AppCompatActivity {
     Button h5App;
     @BindView(R.id.ad_app)
     Button adApp;
+    @BindView(R.id.annotation_app)
+    Button annotationApp;
+    @BindView(R.id.activity_main)
+    RelativeLayout activityMain;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -84,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
         ButterKnife.bind(this);
     }
 
-    @OnClick({R.id.ad_app,R.id.h5_app, R.id.imgload_test, R.id.rsa_test, R.id.https_test, R.id.servicedetail, R.id.md, R.id.qiantaohuadong, R.id.fragment_bug, R.id.fragment_qiantao,
+    @OnClick({R.id.annotation_app,R.id.ad_app, R.id.h5_app, R.id.imgload_test, R.id.rsa_test, R.id.https_test, R.id.servicedetail, R.id.md, R.id.qiantaohuadong, R.id.fragment_bug, R.id.fragment_qiantao,
             R.id.suolue_pic, R.id.notification_test, R.id.permission, R.id.chenjinshi})
     public void btnClick(View view) {
         switch (view.getId()) {
@@ -143,6 +148,10 @@ public class MainActivity extends AppCompatActivity {
             case R.id.ad_app:
                 Intent ad_appItent = new Intent(this, ADActivity.class);
                 startActivity(ad_appItent);
+                break;
+            case R.id.annotation_app:
+                Intent annotation_appItent = new Intent(this, AnotationMain3Activity.class);
+                startActivity(annotation_appItent);
                 break;
         }
 

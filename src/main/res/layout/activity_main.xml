@@ -120,6 +120,12 @@
                 android:layout_height="wrap_content"
                 android:text="跑马灯、淘宝广告条" />
 
+            <Button
+                android:id="@+id/annotation_app"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="自定义注解" />
+
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>
