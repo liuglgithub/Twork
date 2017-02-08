@@ -107,7 +107,9 @@
         <activity android:name=".guanggao.ADActivity" />
         <activity android:name=".annotation.AnotationMain3Activity" />
         <activity android:name=".annotation.OneDefindeActivity" />
-        <activity android:name=".annotation.defindbutterknife.DefindButterKinfeActivity"></activity>
+        <activity android:name=".annotation.defindbutterknife.DefindButterKinfeActivity" />
+        <activity android:name=".view.UIMain3Activity" />
+        <activity android:name=".view.datapick.DatePickActivity"></activity>
     </application>
 
 </manifest>

@@ -126,6 +126,13 @@
                 android:layout_height="wrap_content"
                 android:text="自定义注解" />
 
+            <Button
+                android:id="@+id/ui_app"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="高仿自定义UI" />
+
+
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>

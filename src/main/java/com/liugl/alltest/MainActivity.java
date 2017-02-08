@@ -24,6 +24,7 @@ import com.liugl.alltest.permission.PermissionRequestHomeActivity;
 import com.liugl.alltest.rsa.RSAMain2Activity;
 import com.liugl.alltest.service.ServiceMain2Activity;
 import com.liugl.alltest.suoluetu.SuoleuMain3Activity;
+import com.liugl.alltest.view.UIMain3Activity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -80,6 +81,8 @@ public class MainActivity extends AppCompatActivity {
     Button annotationApp;
     @BindView(R.id.activity_main)
     RelativeLayout activityMain;
+    @BindView(R.id.ui_app)
+    Button uiApp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -89,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
         ButterKnife.bind(this);
     }
 
-    @OnClick({R.id.annotation_app,R.id.ad_app, R.id.h5_app, R.id.imgload_test, R.id.rsa_test, R.id.https_test, R.id.servicedetail, R.id.md, R.id.qiantaohuadong, R.id.fragment_bug, R.id.fragment_qiantao,
+    @OnClick({R.id.ui_app,R.id.annotation_app, R.id.ad_app, R.id.h5_app, R.id.imgload_test, R.id.rsa_test, R.id.https_test, R.id.servicedetail, R.id.md, R.id.qiantaohuadong, R.id.fragment_bug, R.id.fragment_qiantao,
             R.id.suolue_pic, R.id.notification_test, R.id.permission, R.id.chenjinshi})
     public void btnClick(View view) {
         switch (view.getId()) {
@@ -152,6 +155,10 @@ public class MainActivity extends AppCompatActivity {
             case R.id.annotation_app:
                 Intent annotation_appItent = new Intent(this, AnotationMain3Activity.class);
                 startActivity(annotation_appItent);
+                break;
+            case R.id.ui_app:
+                Intent ui_appItent = new Intent(this, UIMain3Activity.class);
+                startActivity(ui_appItent);
                 break;
         }
 
