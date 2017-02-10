@@ -26,6 +26,13 @@
             android:text="时间选择控件"
             />
 
+        <Button
+            android:id="@+id/vpgridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="仿照美团实现viewpager嵌套gridview"
+            />
+
     </LinearLayout>
 
 </ScrollView>

@@ -131,7 +131,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="高仿自定义UI" />
-
+            <Button
+                android:id="@+id/window_app"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="WindowManage小米" />
 
         </LinearLayout>
     </ScrollView>

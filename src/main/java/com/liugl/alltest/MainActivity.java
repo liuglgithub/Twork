@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.RelativeLayout;
 
+import com.liugl.alltest.WindowManager.WindowManagerSystemActivity;
 import com.liugl.alltest.annotation.AnotationMain3Activity;
 import com.liugl.alltest.chenjinshi.ChenJinShiStatusBarMain2Activity;
 import com.liugl.alltest.fragment.FragmentMain2Activity;
@@ -83,6 +84,8 @@ public class MainActivity extends AppCompatActivity {
     RelativeLayout activityMain;
     @BindView(R.id.ui_app)
     Button uiApp;
+    @BindView(R.id.window_app)
+    Button windowApp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -92,7 +95,8 @@ public class MainActivity extends AppCompatActivity {
         ButterKnife.bind(this);
     }
 
-    @OnClick({R.id.ui_app,R.id.annotation_app, R.id.ad_app, R.id.h5_app, R.id.imgload_test, R.id.rsa_test, R.id.https_test, R.id.servicedetail, R.id.md, R.id.qiantaohuadong, R.id.fragment_bug, R.id.fragment_qiantao,
+    @OnClick({R.id.window_app,R.id.ui_app, R.id.annotation_app, R.id.ad_app, R.id.h5_app,
+            R.id.imgload_test, R.id.rsa_test, R.id.https_test, R.id.servicedetail, R.id.md, R.id.qiantaohuadong, R.id.fragment_bug, R.id.fragment_qiantao,
             R.id.suolue_pic, R.id.notification_test, R.id.permission, R.id.chenjinshi})
     public void btnClick(View view) {
         switch (view.getId()) {
@@ -156,12 +160,15 @@ public class MainActivity extends AppCompatActivity {
                 Intent annotation_appItent = new Intent(this, AnotationMain3Activity.class);
                 startActivity(annotation_appItent);
                 break;
-            case R.id.ui_app:
+            case R.id.ui_app:  //自定义UI
                 Intent ui_appItent = new Intent(this, UIMain3Activity.class);
                 startActivity(ui_appItent);
                 break;
+            case R.id.window_app:
+                Intent window_appItent = new Intent(this, WindowManagerSystemActivity.class);
+                startActivity(window_appItent);
+                break;
         }
-
     }
 
 

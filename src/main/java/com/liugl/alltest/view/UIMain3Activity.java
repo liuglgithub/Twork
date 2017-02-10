@@ -9,6 +9,7 @@ import android.widget.RelativeLayout;
 
 import com.liugl.alltest.R;
 import com.liugl.alltest.view.datapick.DatePickActivity;
+import com.liugl.alltest.view.viewpagernetsgridview.ViewPagerNestGridViewActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -20,6 +21,8 @@ public class UIMain3Activity extends AppCompatActivity {
     Button datapic;
     @BindView(R.id.activity_uimain3)
     RelativeLayout activityUimain3;
+    @BindView(R.id.vpgridview)
+    Button vpgridview;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,13 +31,17 @@ public class UIMain3Activity extends AppCompatActivity {
         ButterKnife.bind(this);
     }
 
-    @OnClick({R.id.datapic})
-    public void onBtnClick(View view){
+    @OnClick({R.id.vpgridview,R.id.datapic})
+    public void onBtnClick(View view) {
 
-        switch (view.getId()){
+        switch (view.getId()) {
             case R.id.datapic:
                 Intent datapickItent = new Intent(this, DatePickActivity.class);
                 startActivity(datapickItent);
+                break;
+            case R.id.vpgridview:
+                Intent vpIntent = new Intent(this, ViewPagerNestGridViewActivity.class);
+                startActivity(vpIntent);
                 break;
         }
 
