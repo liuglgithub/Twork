@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.liugl.alltest.BaseActivity;
 import com.liugl.alltest.R;
 
 import java.io.IOException;
@@ -31,7 +32,7 @@ import okhttp3.Request;
 import okhttp3.Response;
 import okio.Buffer;
 
-public class HttpsMain2Activity extends AppCompatActivity {
+public class HttpsMain2Activity extends BaseActivity {
 
     @BindView(R.id.no_cer_https_button6)
     Button noCerHttpsButton6;

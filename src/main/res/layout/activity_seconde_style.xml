@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_seconde_style"
     android:layout_width="match_parent"
@@ -9,6 +9,7 @@
 
     <!--这个是隐藏的布局，然后通过动态的设置高度达到效果-->
     <LinearLayout
+        android:layout_alignParentTop="true"
         android:id="@+id/ll_bar"
         android:layout_width="fill_parent"
         android:layout_height="1dp"
@@ -16,12 +17,85 @@
         android:background="#e7abff"
         android:visibility="gone">
     </LinearLayout>
+    <ScrollView
+        android:layout_below="@+id/ll_bar"
+        android:layout_above="@+id/bom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            >
+
+            <TextView
+                android:fitsSystemWindows="true"
+                android:clipToPadding="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#339966"
+                android:text="你好，沉浸式状态栏"/>
+            <TextView
+                android:fitsSystemWindows="true"
+                android:clipToPadding="true"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#339966"
+                android:text="你好，沉浸式状态栏"/>
+            <TextView
+                android:fitsSystemWindows="true"
+                android:clipToPadding="true"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#339966"
+                android:text="你好，沉浸式状态栏"/>
+            <TextView
+                android:fitsSystemWindows="true"
+                android:clipToPadding="true"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#339966"
+                android:text="你好，沉浸式状态栏"/>
+            <TextView
+                android:fitsSystemWindows="true"
+                android:clipToPadding="true"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#339966"
+                android:text="你好，沉浸式状态栏"/>
+
+
+            <TextView
+                android:fitsSystemWindows="true"
+                android:clipToPadding="true"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="#339966"
+                android:text="你好，沉浸式状态栏"/>
+            <TextView
+                android:fitsSystemWindows="true"
+                android:clipToPadding="true"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="#339966"
+                android:text="你好，沉浸式状态栏"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+
+        </LinearLayout>
+    </ScrollView>
     <TextView
+        android:id="@+id/bom"
+        android:layout_alignParentBottom="true"
         android:fitsSystemWindows="true"
         android:clipToPadding="true"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="150dp"
         android:background="#339966"
-        android:text="你好，沉浸式状态栏"/>
+        android:text="Btttne"/>
 
-</LinearLayout>
+</RelativeLayout>

@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
+import com.liugl.alltest.BaseActivity;
 import com.liugl.alltest.R;
 import com.liugl.alltest.guanggao.paomadeng.PaoMaDengActivity;
 import com.liugl.alltest.guanggao.taobao.TaoBaoADActivity;
@@ -14,7 +15,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class ADActivity extends AppCompatActivity {
+public class ADActivity extends BaseActivity {
 
     @BindView(R.id.taobao_tn)
     Button taobaoTn;

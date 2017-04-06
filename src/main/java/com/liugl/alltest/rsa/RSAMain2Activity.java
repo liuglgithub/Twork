@@ -6,6 +6,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
+import com.liugl.alltest.BaseActivity;
 import com.liugl.alltest.R;
 
 import java.util.Map;
@@ -14,7 +15,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class RSAMain2Activity extends AppCompatActivity {
+public class RSAMain2Activity extends BaseActivity {
 
     @BindView(R.id.entre)
     Button entre;

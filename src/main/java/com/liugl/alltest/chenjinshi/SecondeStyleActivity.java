@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 
 import com.liugl.alltest.R;
 
@@ -41,7 +42,7 @@ public class SecondeStyleActivity extends AppCompatActivity {
             //获取到状态栏的高度
             int statusHeight = getStatusBarHeight();
             //动态的设置隐藏布局的高度
-            LinearLayout.LayoutParams params = (LinearLayout.LayoutParams) linear_bar.getLayoutParams();
+            RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) linear_bar.getLayoutParams();
             params.height = statusHeight;
             linear_bar.setLayoutParams(params);
         }
@@ -70,7 +71,15 @@ public class SecondeStyleActivity extends AppCompatActivity {
      */
     private void hindsystembar(){
 
-        ActionBar actionBar=this.getSupportActionBar();
-        actionBar.hide();
+//        ActionBar actionBar=this.getSupportActionBar();
+//        actionBar.hide();
+
+        /**
+         * 可以控制布局是否延展到状态栏下面
+         *  mDecorView.setSystemUiVisibility(View.SYSTEM_UI_FLAG_HIDE_NAVIGATION);
+         */
+//        View mDecorView = getWindow().getDecorView();
+//        mDecorView.setSystemUiVisibility(View.SYSTEM_UI_FLAG_HIDE_NAVIGATION);
+
     }
 }

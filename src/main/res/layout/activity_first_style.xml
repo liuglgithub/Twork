@@ -6,6 +6,90 @@
     android:layout_height="match_parent"
 android:orientation="vertical"
     tools:context="com.liugl.alltest.chenjinshi.FirstStyleActivity">
+
+
+    <TextView
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffff99"
+        android:text="第一种你好，沉浸式状态栏"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            >
+
+            <TextView
+                android:fitsSystemWindows="true"
+                android:clipToPadding="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#339966"
+                android:text="你好，沉浸式状态栏"/>
+            <TextView
+                android:fitsSystemWindows="true"
+                android:clipToPadding="true"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#339966"
+                android:text="你好，沉浸式状态栏"/>
+            <TextView
+                android:fitsSystemWindows="true"
+                android:clipToPadding="true"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#339966"
+                android:text="你好，沉浸式状态栏"/>
+            <TextView
+                android:fitsSystemWindows="true"
+                android:clipToPadding="true"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#339966"
+                android:text="你好，沉浸式状态栏"/>
+            <TextView
+                android:fitsSystemWindows="true"
+                android:clipToPadding="true"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#339966"
+                android:text="你好，沉浸式状态栏"/>
+
+
+            <TextView
+                android:fitsSystemWindows="true"
+                android:clipToPadding="true"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="#339966"
+                android:text="你好，沉浸式状态栏"/>
+            <TextView
+                android:fitsSystemWindows="true"
+                android:clipToPadding="true"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="#339966"
+                android:text="你好，沉浸式状态栏"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
     <TextView
         android:fitsSystemWindows="true"
         android:layout_width="match_parent"

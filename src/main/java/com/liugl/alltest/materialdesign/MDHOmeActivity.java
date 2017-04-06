@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.liugl.alltest.BaseActivity;
 import com.liugl.alltest.R;
 import com.liugl.alltest.materialdesign.toolbar.ToolBarMDActivity;
 import com.liugl.alltest.nestedscroll.NestedScrollHomeActivity;
@@ -14,7 +15,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class MDHOmeActivity extends AppCompatActivity {
+public class MDHOmeActivity extends BaseActivity {
 
     @BindView(R.id.tb)
     Button tb;

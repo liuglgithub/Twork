@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
+import com.liugl.alltest.BaseActivity;
 import com.liugl.alltest.R;
 import com.liugl.alltest.imgload.glide.GlideMain2Activity;
 
@@ -13,7 +14,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class ImageLoaderMain2Activity extends AppCompatActivity {
+public class ImageLoaderMain2Activity extends BaseActivity {
 
     @BindView(R.id.glidebutton6)
     Button glidebutton6;

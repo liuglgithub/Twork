@@ -25,6 +25,7 @@ import com.liugl.alltest.permission.PermissionRequestHomeActivity;
 import com.liugl.alltest.rsa.RSAMain2Activity;
 import com.liugl.alltest.service.ServiceMain2Activity;
 import com.liugl.alltest.suoluetu.SuoleuMain3Activity;
+import com.liugl.alltest.utils.CommonUtils;
 import com.liugl.alltest.view.UIMain3Activity;
 
 import butterknife.BindView;
@@ -86,6 +87,8 @@ public class MainActivity extends AppCompatActivity {
     Button uiApp;
     @BindView(R.id.window_app)
     Button windowApp;
+//    @BindView(R.id.tbn_app)
+//    Button tbnApp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -93,9 +96,24 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Log.e(TAG, TAG1 + "   onCreate");
         ButterKnife.bind(this);
+
+ /*       if (tbnApp!=null){
+            Log.e("testlgl","tbnapp is not null");
+            tbnApp = null;
+        }
+
+        if (tbnApp==null){
+            tbnApp = (Button) this.findViewById(R.id.tbn_app);
+            tbnApp.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Log.e("testlgl","tbnapp 初始化findviewbyid");
+                }
+            });
+        }*/
     }
 
-    @OnClick({R.id.window_app,R.id.ui_app, R.id.annotation_app, R.id.ad_app, R.id.h5_app,
+    @OnClick({R.id.window_app, R.id.ui_app, R.id.annotation_app, R.id.ad_app, R.id.h5_app,
             R.id.imgload_test, R.id.rsa_test, R.id.https_test, R.id.servicedetail, R.id.md, R.id.qiantaohuadong, R.id.fragment_bug, R.id.fragment_qiantao,
             R.id.suolue_pic, R.id.notification_test, R.id.permission, R.id.chenjinshi})
     public void btnClick(View view) {
@@ -165,8 +183,11 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(ui_appItent);
                 break;
             case R.id.window_app:
-                Intent window_appItent = new Intent(this, WindowManagerSystemActivity.class);
-                startActivity(window_appItent);
+//                Intent window_appItent = new Intent(this, WindowManagerSystemActivity.class);
+//                startActivity(window_appItent);
+
+                Log.e("devid yndes", CommonUtils.devUniqueID());
+
                 break;
         }
     }

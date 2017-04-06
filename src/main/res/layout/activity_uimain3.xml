@@ -32,7 +32,12 @@
             android:layout_height="wrap_content"
             android:text="仿照美团实现viewpager嵌套gridview"
             />
-
+        <Button
+            android:id="@+id/rvmulit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RecyclerView多布局"
+            />
     </LinearLayout>
 
 </ScrollView>

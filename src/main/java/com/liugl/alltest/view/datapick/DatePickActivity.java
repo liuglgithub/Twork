@@ -4,9 +4,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Toast;
 
+import com.liugl.alltest.BaseActivity;
 import com.liugl.alltest.R;
 
-public class DatePickActivity extends AppCompatActivity {
+public class DatePickActivity extends BaseActivity {
     private CalendarView calendarView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

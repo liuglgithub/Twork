@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.liugl.alltest.BaseActivity;
 import com.liugl.alltest.R;
 
 import butterknife.BindView;
@@ -15,7 +16,7 @@ import butterknife.OnClick;
 /**
  * 使用系统api申请权限
  */
-public class PermissionRequestHomeActivity extends AppCompatActivity {
+public class PermissionRequestHomeActivity extends BaseActivity {
 
     @BindView(R.id.systemapipersion)
     public Button defaultbtn;

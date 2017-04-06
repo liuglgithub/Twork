@@ -16,7 +16,8 @@ public class FirstStyleActivity extends AppCompatActivity {
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
-            initState();
+//            initState();
+            initMuliteState();
             hindsystembar();
             setContentView(R.layout.activity_first_style);
         }
@@ -52,7 +53,7 @@ public class FirstStyleActivity extends AppCompatActivity {
                         | View.SYSTEM_UI_FLAG_LAYOUT_STABLE;
                 decorView.setSystemUiVisibility(option);
                 //设置状态栏是否透明
-                getWindow().setStatusBarColor(Color.TRANSPARENT);
+//                getWindow().setStatusBarColor(Color.TRANSPARENT);
             }else  if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
 
 //            Window window = getWindow();
@@ -73,10 +74,10 @@ public class FirstStyleActivity extends AppCompatActivity {
          * 可以控制布局是否延展到状态栏下面
          *  mDecorView.setSystemUiVisibility(View.SYSTEM_UI_FLAG_HIDE_NAVIGATION);
          */
-//        View mDecorView = getWindow().getDecorView();
-//        mDecorView.setSystemUiVisibility(View.SYSTEM_UI_FLAG_HIDE_NAVIGATION);
-        ActionBar actionBar=this.getSupportActionBar();
-        actionBar.hide();
+        View mDecorView = getWindow().getDecorView();
+        mDecorView.setSystemUiVisibility(View.SYSTEM_UI_FLAG_HIDE_NAVIGATION);
+//        ActionBar actionBar=this.getSupportActionBar();
+//        actionBar.hide();
     }
 
 }

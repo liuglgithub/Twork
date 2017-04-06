@@ -18,13 +18,14 @@ import android.widget.LinearLayout;
 import android.widget.RemoteViews;
 import android.widget.TextView;
 
+import com.liugl.alltest.BaseActivity;
 import com.liugl.alltest.R;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class NotificationCustomActivity extends AppCompatActivity {
+public class NotificationCustomActivity extends BaseActivity {
 
     @BindView(R.id.moren)
     Button morenBnt;

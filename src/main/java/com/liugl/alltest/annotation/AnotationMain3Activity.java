@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 
+import com.liugl.alltest.BaseActivity;
 import com.liugl.alltest.R;
 import com.liugl.alltest.annotation.defindbutterknife.DefindButterKinfeActivity;
 
@@ -14,7 +15,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class AnotationMain3Activity extends AppCompatActivity {
+public class AnotationMain3Activity extends BaseActivity {
 
     @BindView(R.id.one_btn)
     Button oneBtn;

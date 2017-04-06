@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_easey_behavior"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.liugl.alltest.nestedscroll.coordinatorlayout.demo2.EaseyBehaviorActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="观察者View  child"
+        app:layout_behavior="com.liugl.alltest.nestedscroll.coordinatorlayout.demo2.EasyBehavior" />
+
+    <Button
+        android:id="@+id/btn_be"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="被观察者view dependcy"
+        />
+
+
+</android.support.design.widget.CoordinatorLayout>

@@ -10,6 +10,7 @@
     <uses-permission android:name="android.permission.CAMERA" />
 
     <application
+        android:name="com.liugl.alltest.Tapplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -31,8 +32,12 @@
         <activity android:name=".permission.PermissionMain2Activity" />
         <activity android:name=".handlethreadloopall.RunOnUIThread_HandlerPostActivity" />
         <activity android:name=".chenjinshi.ChenJinShiStatusBarMain2Activity" />
-        <activity android:name=".chenjinshi.FirstStyleActivity" />
-        <activity android:name=".chenjinshi.SecondeStyleActivity" />
+        <activity
+            android:name=".chenjinshi.FirstStyleActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".chenjinshi.SecondeStyleActivity"
+            android:windowSoftInputMode="adjustPan" />
         <activity android:name=".chenjinshi.ThridStyleActivity" />
         <activity android:name=".chenjinshi.CelueMain2Activity" />
         <activity
@@ -114,7 +119,10 @@
         <activity android:name=".view.UIMain3Activity" />
         <activity android:name=".view.datapick.DatePickActivity" />
         <activity android:name=".WindowManager.WindowManagerSystemActivity" />
-        <activity android:name=".view.viewpagernetsgridview.ViewPagerNestGridViewActivity"></activity>
+        <activity android:name=".view.viewpagernetsgridview.ViewPagerNestGridViewActivity" />
+        <activity android:name=".nestedscroll.coordinatorlayout.demo2.EaseyBehaviorActivity" />
+        <activity android:name=".nestedscroll.coordinatorlayout.uc.UCBehavieMain3Activity" />
+        <activity android:name=".view.recyclerviewmulitlayout.RecycleViewMulitLayoutActivity"></activity>
     </application>
 
 </manifest>

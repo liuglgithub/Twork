@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Toast;
 
+import com.liugl.alltest.BaseActivity;
 import com.liugl.alltest.R;
 
 /**
@@ -26,7 +27,7 @@ import com.liugl.alltest.R;
 调用原生应用
 
  */
-public class Main2Activity extends AppCompatActivity {
+public class Main2Activity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
