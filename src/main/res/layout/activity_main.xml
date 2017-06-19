@@ -133,6 +133,12 @@
                 android:layout_height="wrap_content"
                 android:text="WindowManage小米" />
 
+            <Button
+                android:id="@+id/activity_lifececyle_method"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Activity跳转的时候，两个Activity执行的生命周期方法" />
+
             <!--<Button
                 android:id="@+id/tbn_app"
                 android:layout_width="match_parent"

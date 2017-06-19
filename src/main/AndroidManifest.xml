@@ -10,7 +10,7 @@
     <uses-permission android:name="android.permission.CAMERA" />
 
     <application
-        android:name="com.liugl.alltest.Tapplication"
+        android:name=".Tapplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -122,7 +122,9 @@
         <activity android:name=".view.viewpagernetsgridview.ViewPagerNestGridViewActivity" />
         <activity android:name=".nestedscroll.coordinatorlayout.demo2.EaseyBehaviorActivity" />
         <activity android:name=".nestedscroll.coordinatorlayout.uc.UCBehavieMain3Activity" />
-        <activity android:name=".view.recyclerviewmulitlayout.RecycleViewMulitLayoutActivity"></activity>
+        <activity android:name=".view.recyclerviewmulitlayout.RecycleViewMulitLayoutActivity" />
+        <activity android:name=".activitylifececyle.LifeOneActivity" />
+        <activity android:name=".activitylifececyle.LifeTwoActivity"></activity>
     </application>
 
 </manifest>

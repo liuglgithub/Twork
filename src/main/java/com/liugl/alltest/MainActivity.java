@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.RelativeLayout;
 
-import com.liugl.alltest.WindowManager.WindowManagerSystemActivity;
+import com.liugl.alltest.activitylifececyle.LifeOneActivity;
 import com.liugl.alltest.annotation.AnotationMain3Activity;
 import com.liugl.alltest.chenjinshi.ChenJinShiStatusBarMain2Activity;
 import com.liugl.alltest.fragment.FragmentMain2Activity;
@@ -87,6 +87,8 @@ public class MainActivity extends AppCompatActivity {
     Button uiApp;
     @BindView(R.id.window_app)
     Button windowApp;
+    @BindView(R.id.activity_lifececyle_method)
+    Button lifececylMethod;
 //    @BindView(R.id.tbn_app)
 //    Button tbnApp;
 
@@ -113,7 +115,7 @@ public class MainActivity extends AppCompatActivity {
         }*/
     }
 
-    @OnClick({R.id.window_app, R.id.ui_app, R.id.annotation_app, R.id.ad_app, R.id.h5_app,
+    @OnClick({R.id.activity_lifececyle_method,R.id.window_app, R.id.ui_app, R.id.annotation_app, R.id.ad_app, R.id.h5_app,
             R.id.imgload_test, R.id.rsa_test, R.id.https_test, R.id.servicedetail, R.id.md, R.id.qiantaohuadong, R.id.fragment_bug, R.id.fragment_qiantao,
             R.id.suolue_pic, R.id.notification_test, R.id.permission, R.id.chenjinshi})
     public void btnClick(View view) {
@@ -188,6 +190,10 @@ public class MainActivity extends AppCompatActivity {
 
                 Log.e("devid yndes", CommonUtils.devUniqueID());
 
+                break;
+            case R.id.activity_lifececyle_method:
+                Intent lifececyl_appItent = new Intent(this, LifeOneActivity.class);
+                startActivity(lifececyl_appItent);
                 break;
         }
     }
