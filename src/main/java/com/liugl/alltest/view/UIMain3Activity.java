@@ -10,6 +10,7 @@ import com.liugl.alltest.BaseActivity;
 import com.liugl.alltest.R;
 import com.liugl.alltest.view.datapick.DatePickActivity;
 import com.liugl.alltest.view.recyclerviewmulitlayout.RecycleViewMulitLayoutActivity;
+import com.liugl.alltest.view.shijianzhou.ShiJianZhouActivity;
 import com.liugl.alltest.view.viewpagernetsgridview.ViewPagerNestGridViewActivity;
 
 import butterknife.BindView;
@@ -26,6 +27,8 @@ public class UIMain3Activity extends BaseActivity {
     Button vpgridview;
     @BindView(R.id.rvmulit)
     Button rvmulit;
+    @BindView(R.id.timezhou)
+    Button timezhou;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +37,7 @@ public class UIMain3Activity extends BaseActivity {
         ButterKnife.bind(this);
     }
 
-    @OnClick({R.id.vpgridview, R.id.datapic,R.id.rvmulit})
+    @OnClick({R.id.timezhou,R.id.vpgridview, R.id.datapic,R.id.rvmulit})
     public void onBtnClick(View view) {
 
         switch (view.getId()) {
@@ -49,6 +52,10 @@ public class UIMain3Activity extends BaseActivity {
             case R.id.rvmulit:
                 Intent rvmltyoautIntent = new Intent(this, RecycleViewMulitLayoutActivity.class);
                 startActivity(rvmltyoautIntent);
+                break;
+            case R.id.timezhou:
+                Intent timezhouIntent = new Intent(this, ShiJianZhouActivity.class);
+                startActivity(timezhouIntent);
                 break;
         }
 

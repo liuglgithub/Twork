@@ -124,7 +124,8 @@
         <activity android:name=".nestedscroll.coordinatorlayout.uc.UCBehavieMain3Activity" />
         <activity android:name=".view.recyclerviewmulitlayout.RecycleViewMulitLayoutActivity" />
         <activity android:name=".activitylifececyle.LifeOneActivity" />
-        <activity android:name=".activitylifececyle.LifeTwoActivity"></activity>
+        <activity android:name=".activitylifececyle.LifeTwoActivity" />
+        <activity android:name=".view.shijianzhou.ShiJianZhouActivity"></activity>
     </application>
 
 </manifest>
