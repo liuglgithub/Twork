@@ -24,6 +24,7 @@ import com.liugl.alltest.notification.NotificationCustomActivity;
 import com.liugl.alltest.permission.PermissionRequestHomeActivity;
 import com.liugl.alltest.rsa.RSAMain2Activity;
 import com.liugl.alltest.service.ServiceMain2Activity;
+import com.liugl.alltest.suanfa.SuanFaActivity;
 import com.liugl.alltest.suoluetu.SuoleuMain3Activity;
 import com.liugl.alltest.utils.CommonUtils;
 import com.liugl.alltest.view.UIMain3Activity;
@@ -94,6 +95,10 @@ public class MainActivity extends AppCompatActivity {
     @BindView(R.id.activity_shezhi_ui_div)
     Button shezhiui;
 
+    @BindView(R.id.activity_suanfa_div)
+    Button suanfa;
+
+
 //    @BindView(R.id.tbn_app)
 //    Button tbnApp;
 
@@ -103,7 +108,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Log.e(TAG, TAG1 + "   onCreate");
         ButterKnife.bind(this);
-
+String tmp = String.valueOf("");
  /*       if (tbnApp!=null){
             Log.e("testlgl","tbnapp is not null");
             tbnApp = null;
@@ -120,7 +125,7 @@ public class MainActivity extends AppCompatActivity {
         }*/
     }
 
-    @OnClick({R.id.activity_shezhi_ui_div,R.id.activity_lifececyle_method,R.id.window_app, R.id.ui_app, R.id.annotation_app, R.id.ad_app, R.id.h5_app,
+    @OnClick({R.id.activity_suanfa_div,R.id.activity_shezhi_ui_div,R.id.activity_lifececyle_method,R.id.window_app, R.id.ui_app, R.id.annotation_app, R.id.ad_app, R.id.h5_app,
             R.id.imgload_test, R.id.rsa_test, R.id.https_test, R.id.servicedetail, R.id.md, R.id.qiantaohuadong, R.id.fragment_bug, R.id.fragment_qiantao,
             R.id.suolue_pic, R.id.notification_test, R.id.permission, R.id.chenjinshi})
     public void btnClick(View view) {
@@ -203,6 +208,10 @@ public class MainActivity extends AppCompatActivity {
             case R.id.activity_shezhi_ui_div:
                 Intent shezhi_ui_divItent = new Intent(this, SettingDividerActivity.class);
                 startActivity(shezhi_ui_divItent);
+                break;
+            case R.id.activity_suanfa_div:
+                Intent suanfaItent = new Intent(this, SuanFaActivity.class);
+                startActivity(suanfaItent);
                 break;
         }
     }

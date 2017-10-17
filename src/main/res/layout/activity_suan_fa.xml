@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.liugl.alltest.suanfa.SuanFaActivity">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <Button
+            android:id="@+id/maopao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="冒泡算法"
+            />
+        <Button
+            android:id="@+id/charu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="插入排序"
+            />
+        <Button
+            android:id="@+id/zhong_hou"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="栈应用之中缀和后缀"
+            />
+    </LinearLayout>
+
+</ScrollView>
+</LinearLayout>

@@ -126,7 +126,8 @@
         <activity android:name=".activitylifececyle.LifeOneActivity" />
         <activity android:name=".activitylifececyle.LifeTwoActivity" />
         <activity android:name=".view.shijianzhou.ShiJianZhouActivity" />
-        <activity android:name=".view.divider.SettingDividerActivity"></activity>
+        <activity android:name=".view.divider.SettingDividerActivity" />
+        <activity android:name=".suanfa.SuanFaActivity"></activity>
     </application>
 
 </manifest>
